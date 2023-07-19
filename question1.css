@@ -1,0 +1,91 @@
+#test label{
+    cursor: pointer;
+}
+
+#test input{
+    display: none;
+    margin: 0px;
+}
+
+#test { 
+    background-color: lightpink;
+    border-radius:10px;
+}
+
+#test input+label{
+    opacity: 0;
+}
+
+#test input:checked+label{
+    opacity: 1;
+    background-color: lightblue;
+    border-radius:10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-width: 2px;
+}
+
+body {
+    padding-left: 5%;
+    padding-right: 5%;
+    /* background-color: #dcd6d9; */
+    background-color: white;
+    font-family: 'M PLUS 1p', sans-serif;
+    /* font-family: 'Sawarabi Gothic', sans-serif; */
+}
+
+.white-bg {
+    background-color: white;
+}
+
+.grey-bg {
+    background-color: #dcd6d9;
+}
+/* トップへ戻るボタン */
+.page_top_btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-weight: bold;
+    padding: 0.7em;
+    text-align: center;
+    background: rgba(216, 132, 255, 0.8);
+    color: #fff;
+    transition: 0.3s0;
+    border-radius:10px;
+}
+
+  /* マウスオーバー時 */
+.page_top_btn:hover {
+    background: rgba(216, 132, 255, 0.8);
+    color: rgb(255, 255, 255, 0.8);
+    border-radius:10px;
+}
+/* CSSコード */
+html{
+    scroll-behavior: smooth;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+tr#underline td:first-child {
+    text-decoration: underline;
+}
+
+tr#tl {
+    background-color: #dcd6d9;
+}

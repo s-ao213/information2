@@ -34,8 +34,10 @@
     
         <li>以下のリンクをクリックすると問題のページまで飛びます。</li>
         <li>答えがあっているかどうかは各自自己責任で利用してください。ミスがあれば教えて下さい。</li>
-    
-    
+        <p>前期末の問題はこちら↓↓↓↓↓</p>
+        <p>※別サイトへ移動します。</p>
+        <a href="https://s-ao213.github.io/information/question.html">前期末の問題</a>
+
         <u>
             <h3 id="index">目次</h3>
         </u>
@@ -56,14 +58,14 @@
         </ul>
     
         <u>
-            <h4>小テスト</h4>
+            <!-- <h4>小テスト</h4>
         </u>
         <ul>
             <li><a href="#testA">小テストの範囲</a></li>
             <li><a href="#test1">小テスト第1回</a></li>
             <li><a href="#test22">小テスト第2回</a></li>
             <li><a href="#test3">小テスト第3回</a></li>
-    
+     -->
     <!-- <li><a href="#test">小テスト第回</a></li> -->
         </ul>
 
@@ -84,47 +86,49 @@
             </u>
 
             <li>(1) Excel において、範囲 A1:E1 の合計値と、数値「100」のうち、小さいほうの値をセル F1 に得たい。セル F1 に記述すべき Excel 関数を答えよ。なお、先頭のイコール記号も含めて解答すること(以下、同様)。</li>
-            <p><span id="test"><input type="checkbox" id="blank1"><label for="blank1">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank1"><label for="blank1">　=MIN(SUM(A1:E1), 100)　</label></span></p>
 
             <li>(2) Excel において、範囲 A1:E1 の中央値と、数値「50」のうち、大きいほうの値をセル F1 に得たい。セル F1 に記述すべき Excel 関数を答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank2"><label for="blank2">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank2"><label for="blank2">　=MAX(MEDIAN(A1:E1), 50)　</label></span></p>
 
             <li>(3) Excel において、範囲 A1:E1 の平均値が「60 以上」のときセル F1 に「合格」の文字を得たい。また、平均値が「60 未満」のときセル F1 に「不合格」の文字を得たい。セル F1 に記述すべき Excel関数を答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank3"><label for="blank3">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank3"><label for="blank3">　=IF(AVERAGE(A1:E1) &lt;= 60, "合格", "不合格")　</label></span></p>
 
             <li>(4) Excel において、範囲 A1:E1 の平均値を計算し、小数第 1 位を切り上げた値（すなわち整数値）を セル F1 に得たい。セル F1 に記述すべき Excel 関数を答えよ。 </li>
-            <p><span id="test"><input type="checkbox" id="blank4"><label for="blank4">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank4"><label for="blank4">　=ROUNDUP(AVERAGE(A1:E1), 0)　</label></span></p>
 
             <li>(5) Excel において、セル F1 に 25％の確率で「SR」、75%の確率で「R」の文字を得たい。セル F1 に記述すべき Excel 関数を答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank5"><label for="blank5">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank5"><label for="blank5">　=IF(RAND() &lt;= 0.25, "SR", "R")　</label></span></p>
 
             <li>(6) Excel において、範囲 A1:E1 のなかで、値が「60 未満」の「セルの個数」を、セル F1 に得たい。セル F1 に記述すべき Excel 関数を答えよ。ヒント：COUNTIF 関数 </li>
-            <p><span id="test"><input type="checkbox" id="blank6"><label for="blank6">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank6"><label for="blank6">　=COUNTIF(A1:E1, "&lt;60")
+　</label></span></p>
 
             <li>(7) Excel において、範囲 A1:E1 のなかで、値が「60 以上 70 未満」の「セルの個数」を、セル F1 に得たい。セル F1 に記述すべき Excel 関数を答えよ。ヒント：COUNTIFS 関数 </li>
-            <p><span id="test"><input type="checkbox" id="blank7"><label for="blank7">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank7"><label for="blank7">　=COUNTIFS(A1:E1,"&gt;=60",A1:E1,"&lt;70")
+            　</label></span></p>
 
             <li>(8) Excel における指数表示「3.14E+02」を、通常の数値表示にしたときの値を答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank8"><label for="blank8">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank8"><label for="blank8">　314　</label></span></p>
 
             <li>(9) Excel において、不偏分散を計算するための関数は、「VAR.S 関数」と「VAR.P 関数」のどちらか答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank9"><label for="blank9">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank9"><label for="blank9">　VAR.S 関数　</label></span></p>
 
             <li>(10) ある実験装置の出力値を 10 回計測した。出力値の平均を求めたところ 50.3 であった。このとき、3 回目に計測された出力値 51.2 の偏差はいくらか答えよ。 </li>
-            <p><span id="test"><input type="checkbox" id="blank10"><label for="blank10">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank10"><label for="blank10">　0.9　</label></span></p>
 
             <li>(11) 分散を V 、標準偏差を s という文字で表現するとき、両者の関係を表す数式（等式）を答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank11"><label for="blank11">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank11"><label for="blank11">　V = s<sup>2</sup>　</label></span></p>
 
             <li>(12) 統計学において「標本」と同義の言葉（語）をカタカナ 4 文字で答えよ。 </li>
-            <p><span id="test"><input type="checkbox" id="blank12"><label for="blank12">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank12"><label for="blank12">　サンプル　</label></span></p>
 
             <li>(13) 次の文章の括弧にあてはまる最も適切な言葉を漢字 3 文字で答えよ。 </li>
             <p>「統計学では（ ）から抽出した部分集合を標本という」</p>
-            <p><span id="test"><input type="checkbox" id="blank13"><label for="blank13">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank13"><label for="blank13">　母集団　</label></span></p>
 
             <li>(14) IT パスポート試験の実施形式である「CBT」とは、何の略語か「英語」で答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank14"><label for="blank14">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank14"><label for="blank14">　computer Based Testing　</label></span></p>
 
             <li></li>
             <p><span id="test"><input type="checkbox" id="blank15"><label for="blank15">　　</label></span></p>
@@ -149,56 +153,56 @@
             </u>
 
             <li>(1) コンピュータ 5 大装置を「○○装置」の形式で 5 つ列挙せよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank20"><label for="blank20">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank20"><label for="blank20">　「入力装置」「出力装置」「演算装置」「制御装置」「記憶装置」　</label></span></p>
 
             <li>(2) PC のメインメモリは「主記憶装置」と「補助記憶装置」のどちらに分類されるか答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank21"><label for="blank21">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank21"><label for="blank21">　主記憶装置　</label></span></p>
 
             <li>(3) PC の SSD は「主記憶装置」と「補助記憶装置」のどちらに分類されるか答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank22"><label for="blank22">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank22"><label for="blank22">　補助記憶装置　</label></span></p>
 
             <li>(4) 相対的に製造コストが低く、大きな記憶容量を持った RAM が求められるとき、それに適するものはRAM と DRAM のどちらか答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank23"><label for="blank23">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank23"><label for="blank23">　DEAM　</label></span></p>
 
             <li>(5) PC において「メインメモリ」と「(CPU の)キャッシュメモリ」を比較したとき、一般に記憶容量が大きいのはどちらか答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank24"><label for="blank24">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank24"><label for="blank24">　メインメモリ　</label></span></p>
             
             <li>(6) PC において「メインメモリ」と「(CPU の)キャッシュメモリ」を比較したとき、一般に高速アクセスが可能なのはどちらか答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank25"><label for="blank25">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank25"><label for="blank25">　キャッシュメモリ　</label></span></p>
 
             <li>(7) 最近のコンシューマ向けエントリークラスのノート PC に搭載される CPU の「クロック数」として、最も適切なものはどれか、記号で答えよ。</li>
             <p>1 2.0MHz 2 20MHz 3 200MHz 4 2.0GHz 5 20GHz 6 200GHz</p>
-            <p><span id="test"><input type="checkbox" id="blank26"><label for="blank26">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank26"><label for="blank26">　4　</label></span></p>
 
             <li>(8) 最近のコンシューマ向けミドルクラスのノート PC の CPU の「コア数」として、最も適切なものはどれか、記号で答えよ。</li>
             <p>1 2~4 コア 2 6 コア~12 コア 3 18 コア~36 コア 4 48 コア~128 コア</p>
-            <p><span id="test"><input type="checkbox" id="blank27"><label for="blank27">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank27"><label for="blank27">　2　</label></span></p>
 
 
             <li>(9) 最近のコンシューマ向けミドルクラス Windows PC に採用されている CPU の「アーキテクチャ」として、最も適切なものはどれか答えよ。</li>
             <p>1 x64 2 x86 3 x32 4 68K 5 ARM 6 Apple Silicon</p>
-            <p><span id="test"><input type="checkbox" id="blank28"><label for="blank28">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank28"><label for="blank28">　1　</label></span></p>
 
             <li>(10) 最近のミドルクラスの Android スマートフォンに搭載されている CPU の「アーキテクチャ」として、最も適切なものはどれか答えよ。</li>
             <p>1 x64 2 x86 3 x32 4 68K 5 ARM 6 Apple Silicon</p>
-            <p><span id="test"><input type="checkbox" id="blank29"><label for="blank92">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank29"><label for="blank92">　5　</label></span></p>
 
             <li>(11) USB メモリや SD カードなどの不揮発性の半導体メモリを総称して何というか、最も適切なものを答えよ。</li>
             <p>1 キャッシュメモリ 2 マスクメモリ 3 フラッシュメモリ 4 ロムメモリ</p>
-            <p><span id="test"><input type="checkbox" id="blank30"><label for="blank30">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank30"><label for="blank30">　3　</label></span></p>
 
             <li>(12) 「HDD(Hard Disk Drive)は半導体メモリである」は、適切な説明と「言える」か「言えない」か答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank31"><label for="blank31">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank31"><label for="blank31">　言えない　</label></span></p>
 
             <li>(13) 「JavaScript プログラムは、サーバと通信することなくウェブブラウザ上で動かすことができる。また、必要に応じてサーバと通信する処理も実行できる」は、適切な説明と「言える」か「言えない」か答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank32"><label for="blank32">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank32"><label for="blank32">　言える　</label></span></p>
 
             <li>(14) 次のプリンタのうち、(色再現の観点で)写真印刷に最も適するものを答えよ。</li>
             <p>1 カラーレーザープリンタ 2 ドットインパクトプリンタ 3 インクジェットプリンタ</p>
-            <p><span id="test"><input type="checkbox" id="blank33"><label for="blank33">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank33"><label for="blank33">　3　</label></span></p>
 
             <li>(15) 映像出力インタフェースである「DisplayPort(DP)」と「VGA」を比較したとき、高精細・高画質求めるときに使用すべきはどちらか答えよ。</li>
-            <p><span id="test"><input type="checkbox" id="blank34"><label for="blank34">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank34"><label for="blank34">　DisplayPort(DP)　</label></span></p>
 
         
         </section>
@@ -261,11 +265,11 @@
 
             <li>(1) 多肢択一型のユーザー入力に適したインターフェース(GUI)を全て選択せよ。</li>
             <p>1 テキストボックス 2 スライドバー 3 チェックボックス 4 ラジオボタン</p>
-            <p><span id="test"><input type="checkbox" id="blank47"><label for="blank47">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank47"><label for="blank47">　4　</label></span></p>
 
             <li>(2) 多肢複数選択型のユーザー入力に適したインターフェース(GUI)を全て選択せよ。</li>
             <p>1 テキストボックス 2 スライドバー 3 チェックボックス 4 ラジオボタン</p>
-            <p><span id="test"><input type="checkbox" id="blank48"><label for="blank48">　　</label></span></p>
+            <p><span id="test"><input type="checkbox" id="blank48"><label for="blank48">　3　</label></span></p>
 
         </section>
 
@@ -277,11 +281,11 @@
 
         <li>(1) 次に示す RGB 値のうち「黄色」を表すものはどれか答えよ。また、「水色」を表すものはどれか答えよ。</li>
         <p>① (0, 255, 255) ② (255, 0, 255) ③ (255, 255, 0) ④ (255, 255, 255) ⑤ (0, 0, 0)</p>
-        <p><span id="test"><input type="checkbox" id="blank49"><label for="blank49">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank49"><label for="blank49">　黄色:3    水色:1　</label></span></p>
 
         <li>(2) グレースケール画像において、画素値(輝度値)が 0 のとき、それが表す色はどれか答えよ。</li>
         <p> ① 白 ② 黒 ③ 濃い灰色 ④ 薄い灰色</p>
-        <p><span id="test"><input type="checkbox" id="blank50"><label for="blank50">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank50"><label for="blank50">　2　</label></span></p>
 
         <li>(3) 無圧縮形式で画素数(縦横のピクセル数)が同じ場合、フルカラー画像は、256 階調グレースケール画像の約何倍のファイルサイズになるか答えよ。</li>
         <p>① 2 倍 ② 3 倍 ③ 8 倍 ④ 24 倍 </p>
@@ -293,18 +297,18 @@
 
         <li>(5) Photoshop や Illustrator、Premiere Pro などのソフトウェアを開発・販売している企業は、次のうちどれか 答えよ。</li>
         <p>① Microsoft ② Apple ③ NVIDIA ④ Adobe ⑤ Macromedia ⑥ Corel</p>
-        <p><span id="test"><input type="checkbox" id="blank53"><label for="blank53">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank53"><label for="blank53">　4:Adobe　</label></span></p>
 
         <li> (6)「閾値は、“いきち”または（ ）と読む」。括弧にあてはまる語を「ひらがな」で答えよ。</li>
-        <p><span id="test"><input type="checkbox" id="blank54"><label for="blank54">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank54"><label for="blank54">　しきいち　</label></span></p>
 
         <li>(7) 画像ファイル形式の 1 つである「ビットマップ（.bmp）」の特性として該当するものをすべて答えよ。</li>
         <p>① 無圧縮形式 ② 不可逆圧縮形式 ③ 可逆圧縮形式 ④ ラスタ形式 ⑤ ベクタ形式 ⑥ アニメーション対応形式 ⑦ 透過対応形式</p>
-        <p><span id="test"><input type="checkbox" id="blank55"><label for="blank55">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank55"><label for="blank55">　1,3,4　</label></span></p>
 
         <li>(8) Excel において、現在のシートとは別の「TEST」というシートの範囲 A1:A4 を参照したい。それを表す文 字列は次のうちどれか答えよ。</li>
         <p>① TEST/A1:A4 ② TEST¥A1:A4 ③ TEST@A1:A4 ④ TEST$A1:A4 ⑤ TEST!A1:A4</p>
-        <p><span id="test"><input type="checkbox" id="blank56"><label for="blank56">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank56"><label for="blank56">　5　</label></span></p>
 
         </section>
 
@@ -348,32 +352,32 @@
 
         <li>(9) Windows におけるファイル管理の標準アプリの名称を答えよ。</li>
         <p>1 File Manager 2 Finder 3 Explorer 4 FD 5 Filer 6 nautilus</p>
-        <p><span id="test"><input type="checkbox" id="blank65"><label for="blank65">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank65"><label for="blank65">　3　</label></span></p>
 
         <li>(10) Mac OS におけるファイル管理の標準アプリの名称を答えよ。</li>
         <p>1 File Manager 2 Finder 3 Explorer 4 FD 5 Filer 6 nautilus</p>
-        <p><span id="test"><input type="checkbox" id="blank66"><label for="blank66">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank66"><label for="blank66">　2　</label></span></p>
 
         <li>(11)「Windows においてファイル名では半角英字の大文字と小文字を区別しない。そのため、Test.txtと TEST.txt は同じファイルを意味する」。これは「正しい」か「誤り」か答えよ。</li>
-        <p><span id="test"><input type="checkbox" id="blank67"><label for="blank67">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank67"><label for="blank67">　正しい　</label></span></p>
 
         <li>(12)「Windows においてファイル名の拡張子では半角英字の大文字と小文字を区別しない。そのため、Test.TXT と Test.txt は同じファイルを意味する」。これは「正しい」か「誤り」か答えよ。</li>
-        <p><span id="test"><input type="checkbox" id="blank68"><label for="blank68">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank68"><label for="blank68">　正しい　</label></span></p>
 
         <li>(13) 次の半角記号のうち、Windows においてファイル名として使用できないものをすべて答えよ。</li>
         <p>1 ! 2 ? 3 * 4 ~ 5 $ 6 % 7 ¥ 8 / 9 ,</p>
-        <p><span id="test"><input type="checkbox" id="blank69"><label for="blank69">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank69"><label for="blank69">　2,3,7,8　</label></span></p>
 
         <li>(14) Windows において、パス文字列のなかでフォルダ階層を区切るために使用する文字(記号)はどれか答えよ。</li>
         <p>1 / 2 ¥ 3 $ 4 :</p>
-        <p><span id="test"><input type="checkbox" id="blank70"><label for="blank70">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank70"><label for="blank70">　2　</label></span></p>
 
         <li>(15)Windows のエクスプローラにおいて、連続しない複数のファイルを選択したい。1 個目のファイルをクリックした後、2 個目以降のファイルをクリックで追加選択するために押下すべきキーはどれか答えよ。</li>
         <p>1 alt 2Shift 3 Ctrl 4 Tab 5 esc</p>
-        <p><span id="test"><input type="checkbox" id="blank71"><label for="blank71">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank71"><label for="blank71">　3コントロール　</label></span></p>
 
         <li>(16) JPEG などの画像に埋め込まれる撮影データや位置情報などのメタデータは何と呼ばれるか。大文字のアルファベット 4 文字で答えよ。</li>
-        <p><span id="test"><input type="checkbox" id="blank72"><label for="blank72">　　</label></span></p>
+        <p><span id="test"><input type="checkbox" id="blank72"><label for="blank72">　EXIF　</label></span></p>
 
         <li>(17) データ容量 4 TB の HDD を 3 台使用して「RAID 0」を構成した。実効データ容量は、およそ何 TBになるか答えよ。</li>
         <p><span id="test"><input type="checkbox" id="blank73"><label for="blank73">　　</label></span></p>
